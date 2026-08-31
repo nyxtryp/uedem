@@ -1,0 +1,327 @@
+```html
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>УЕДЕМ — AI-платформа путешествий и переезда</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#07090d;color:#f4f7fb;font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+.wrap{max-width:1100px;margin:auto;padding:24px 20px 80px}
+.hero{text-align:center;padding:80px 0 60px}
+.logo{font-size:14px;letter-spacing:6px;color:#6ee7ff;font-weight:800}
+h1{font-size:clamp(48px,9vw,100px);line-height:.95;margin:18px 0}
+.hero p{max-width:760px;margin:auto;color:#aab4c3;font-size:clamp(18px,3vw,25px)}
+section{padding:55px 0;border-top:1px solid #202733}
+h2{font-size:34px;margin:0 0 12px}
+.sub{color:#9da8b8;max-width:800px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:15px;margin-top:25px}
+.card{background:#10151d;border:1px solid #242d3a;border-radius:20px;padding:24px}
+.card h3{font-size:20px;margin:0 0 8px}
+.card p{color:#a6b0be;margin:0}
+.accent{border-color:#285b68;background:linear-gradient(135deg,#0c181d,#10151d)}
+.tag{display:inline-block;padding:6px 10px;border-radius:20px;background:#14242a;color:#6ee7ff;font-size:11px;font-weight:bold;letter-spacing:1px;margin-bottom:12px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:25px}
+.flow span{background:#111923;border:1px solid #293444;border-radius:12px;padding:12px 15px}
+.arrow{color:#627084}
+.big{font-size:28px;font-weight:bold}
+.footer{text-align:center;color:#657080;padding-top:50px}
+@media(max-width:600px){.hero{padding:45px 0}.card{padding:19px}}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+<header class="hero">
+<div class="logo">УЕДЕМ / WAYGO</div>
+<h1>Куда хочешь —<br>туда и уедем.</h1>
+<p>
+AI-платформа, которая помогает человеку переехать,
+спланировать путешествие, купить поездку и остаётся с ним
+на протяжении всего маршрута.
+</p>
+</header>
+
+<section>
+<h2>Одна платформа — весь путь</h2>
+<p class="sub">От первой мысли «куда бы уехать?» до возвращения домой или решения остаться.</p>
+
+<div class="grid">
+<div class="card accent">
+<span class="tag">ПЕРЕЕЗД</span>
+<h3>🏠 Хочу переехать</h3>
+<p>Подбор страны, бюджет, стоимость жизни, документы, визы, ВНЖ, жильё и пошаговый план.</p>
+</div>
+
+<div class="card">
+<span class="tag">ПУТЕШЕСТВИЕ</span>
+<h3>✈️ Хочу путешествовать</h3>
+<p>Перелёт, жильё, страховка, eSIM, трансфер, развлечения и готовый маршрут.</p>
+</div>
+
+<div class="card">
+<span class="tag">ОТДЫХ</span>
+<h3>🏖 Хочу отдохнуть</h3>
+<p>Человек называет бюджет и пожелания — AI подбирает подходящие направления.</p>
+</div>
+
+<div class="card">
+<span class="tag">ТУРЫ</span>
+<h3>🎫 Хочу путёвку</h3>
+<p>Горящие туры, пакетные предложения, All Inclusive и готовые варианты отдыха.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Что можно купить через «Уедем»</h2>
+
+<div class="grid">
+<div class="card"><h3>✈️ Авиабилеты</h3><p>Прямые, сложные, туда-обратно и многосоставные маршруты.</p></div>
+<div class="card"><h3>🏨 Жильё</h3><p>Отели, апартаменты, хостелы и долгосрочное жильё.</p></div>
+<div class="card"><h3>🎫 Туры</h3><p>Готовые туры и горящие путёвки через партнёрские программы.</p></div>
+<div class="card"><h3>🎟 Экскурсии</h3><p>Экскурсии, активности, развлечения и билеты.</p></div>
+<div class="card"><h3>🛡 Страховки</h3><p>Подбор туристической страховки под конкретную поездку.</p></div>
+<div class="card"><h3>📱 eSIM</h3><p>Связь по прибытии и во время путешествия.</p></div>
+<div class="card"><h3>🚐 Трансферы</h3><p>Аэропорт, отель и поездки между городами.</p></div>
+<div class="card"><h3>🚗 Аренда</h3><p>Автомобили и другой доступный транспорт.</p></div>
+<div class="card"><h3>🛂 Визы</h3><p>Партнёрские визовые и миграционные услуги.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Человек купил поездку — мы не исчезаем</h2>
+<p class="sub">
+Главная идея «Уедем»: сервис продолжает помогать человеку уже после покупки.
+</p>
+
+<div class="grid">
+<div class="card accent">
+<h3>📍 Гид рядом</h3>
+<p>
+С разрешения пользователя сервис понимает его местоположение
+и предлагает подходящие услуги рядом: экскурсии, рестораны,
+развлечения, транспорт и интересные места.
+</p>
+</div>
+
+<div class="card">
+<h3>🗺 Умный маршрут</h3>
+<p>
+AI строит маршрут и предлагает интересные места и услуги
+по пути.
+</p>
+</div>
+
+<div class="card">
+<h3>🔔 Push</h3>
+<p>
+Без обязательной регистрации. Пользователь разрешает push
+и получает полезные предложения во время поездки.
+</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Пример</h2>
+<p class="sub">
+Человек приехал во Вьетнам на два месяца. Перелёт и трансфер
+он уже купил через «Уедем».
+</p>
+
+<div class="card accent">
+<p class="big">🇻🇳 «У вас свободные выходные»</p>
+<p>
+«Мы нашли 6 вариантов рядом с вами:
+острова, Ниньбинь, экскурсия на байках,
+закатная прогулка и другие варианты.
+Посмотреть подборку →»
+</p>
+</div>
+
+<p class="sub">
+Человеку больше не нужно открывать десять разных сервисов,
+чтобы искать развлечения самостоятельно.
+</p>
+</section>
+
+<section>
+<h2>Как мы зарабатываем</h2>
+<p class="sub">
+«Уедем» не обязан сам предоставлять все услуги.
+Мы подключаем партнёров и получаем комиссию за приведённого клиента.
+</p>
+
+<div class="grid">
+<div class="card accent">
+<h3>🤝 Партнёрские комиссии</h3>
+<p>
+Туры, отели, авиабилеты, экскурсии, страховки,
+eSIM, трансферы, аренда, визовые услуги и другое.
+</p>
+</div>
+
+<div class="card accent">
+<h3>💰 Кешбэк 50/50</h3>
+<p>
+Полученную партнёрскую комиссию делим:
+<strong>50% пользователю</strong> и
+<strong>50% «Уедем»</strong>,
+если конкретная партнёрская программа разрешает cashback-модель.
+</p>
+</div>
+
+<div class="card">
+<h3>📣 Лидогенерация</h3>
+<p>
+Партнёры могут платить за качественные заявки и клиентов.
+</p>
+</div>
+
+<div class="card">
+<h3>⭐ PRO</h3>
+<p>
+Расширенные функции и премиальные возможности для пользователей.
+</p>
+</div>
+
+<div class="card">
+<h3>📢 Реклама</h3>
+<p>
+Релевантная реклама внутри туристической экосистемы.
+</p>
+</div>
+
+<div class="card">
+<h3>🔗 Реферальная система</h3>
+<p>
+Пользователи и блогеры приводят новых клиентов и получают вознаграждение.
+</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Одна поездка может приносить несколько комиссий</h2>
+
+<div class="flow">
+<span>✈️ Перелёт</span>
+<div class="arrow">→</div>
+<span>🏨 Жильё</span>
+<div class="arrow">→</div>
+<span>🛡 Страховка</span>
+<div class="arrow">→</div>
+<span>📱 eSIM</span>
+<div class="arrow">→</div>
+<span>🚐 Трансфер</span>
+<div class="arrow">→</div>
+<span>🎟 Экскурсии</span>
+<div class="arrow">→</div>
+<span>🚗 Аренда</span>
+</div>
+
+<p class="sub" style="margin-top:25px">
+А если человек покупает готовый пакетный тур,
+мы получаем комиссию с самого турпакета.
+Не нужно продавать отдельно то, что уже входит в путёвку.
+</p>
+</section>
+
+<section>
+<h2>До поездки. Во время. После.</h2>
+
+<div class="grid">
+<div class="card">
+<h3>До поездки</h3>
+<p>✈️ перелёт<br>🏨 жильё<br>🛡 страховка<br>📱 eSIM<br>🚐 трансфер</p>
+</div>
+
+<div class="card accent">
+<h3>Во время поездки</h3>
+<p>📍 Гид рядом<br>🎟 экскурсии<br>🍜 места<br>🏝 развлечения<br>🚗 транспорт</p>
+</div>
+
+<div class="card">
+<h3>После</h3>
+<p>✈️ обратный билет<br>🚐 трансфер<br>🧳 багаж<br>🏠 продление поездки<br>🌍 решение остаться</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>А если человек решит остаться?</h2>
+
+<div class="card accent">
+<p class="big">✈️ Путешествие → 🏠 Переезд</p>
+<p>
+Человек приехал на месяц, потом на два, а затем понял,
+что хочет жить в этой стране.
+«Уедем» уже знает контекст его поездки и может перевести
+его в сценарий переезда: жильё, документы, визы,
+стоимость жизни и дальнейшие шаги.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Без обязательной регистрации</h2>
+
+<div class="grid">
+<div class="card">
+<h3>1. Зашёл</h3>
+<p>Сразу пользуешься сервисом.</p>
+</div>
+<div class="card">
+<h3>2. Получил пользу</h3>
+<p>AI помогает подобрать поездку или переезд.</p>
+</div>
+<div class="card">
+<h3>3. Разрешил Push</h3>
+<p>Получаешь сопровождение и предложения во время поездки.</p>
+</div>
+<div class="card">
+<h3>4. Покупаешь</h3>
+<p>Получаешь доступный кешбэк с партнёрской комиссии.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Как будем привлекать людей</h2>
+
+<div class="grid">
+<div class="card"><h3>🔎 SEO</h3><p>Тысячи страниц под реальные запросы путешественников и тех, кто хочет переехать.</p></div>
+<div class="card"><h3>🎬 TikTok / Shorts</h3><p>Страны, бюджеты, сравнения, AI-подборы и вирусные форматы.</p></div>
+<div class="card"><h3>👥 Блогеры</h3><p>Реферальные ссылки и вознаграждение за приведённых клиентов.</p></div>
+<div class="card"><h3>🎁 Рекомендации</h3><p>Пользователь приглашает друзей и получает бонус.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Главная идея</h2>
+
+<div class="card accent">
+<p class="big">Не сайт с билетами.</p>
+<p>
+<strong>«Уедем» — AI-спутник человека.</strong>
+</p>
+<p>
+Придумать поездку → подобрать → купить → прилететь →
+получать предложения рядом → путешествовать →
+вернуться или решить остаться.
+</p>
+</div>
+</section>
+
+<div class="footer">
+УЕДЕМ / WAYGO<br>
+Рабочая концепция проекта
+</div>
+
+</div>
+</body>
+</html>
+```
